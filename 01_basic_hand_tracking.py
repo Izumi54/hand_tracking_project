@@ -70,7 +70,8 @@ while cap.isOpened():                # selama kamera terbuka
     if result.multi_hand_landmarks:     # kalau ada tangan terdeteksi
         
         for hand_landmarks in result.multi_hand_landmarks:
-
+            
+            # jika tidak ingin etrlihat garis gambar comment code di bawah ini
             mp_drawing.draw_landmarks(
                 image,          # Gambar dimana? di dalam frame kamera
                 hand_landmarks, # Koordinat tangan
@@ -99,6 +100,7 @@ while cap.isOpened():                # selama kamera terbuka
             cx = int(thumb.x * w) # x * lebar gambar
             cy = int(thumb.y * h) # y * tinggi gambar
 
+            # jika tidak ingin ada tulisan di layar comment code di bawah ini
             # Tulis teks di layar
             cv2.putText(
                 image,                          # gamabr di mana? 
