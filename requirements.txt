@@ -1,0 +1,12 @@
+# Computer Vision - Hand Tracking Project
+# Python 3.11 compatible
+
+# Core Computer Vision
+opencv-python==4.9.0.80
+mediapipe==0.10.11
+
+# Numerical Computing
+numpy==1.26.4
+
+# Mouse & Keyboard Control (for Virtual Mouse phase)
+pynput==1.7.6

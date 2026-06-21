@@ -1,0 +1,151 @@
+# Pastikan di folder project dan venv aktif
+cd ~/Documents/Belajar/Computer\ Vision/hand-tracking-project
+
+# Buat file .gitignore
+cat > .gitignore << 'EOF'
+# ============================================
+# PYTHON VIRTUAL ENVIRONMENT
+# ============================================
+venv/
+env/
+ENV/
+.venv/
+.env/
+
+# ============================================
+# PYTHON CACHE & COMPILED FILES
+# ============================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# ============================================
+# DISTRIBUTION / PACKAGING
+# ============================================
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# ============================================
+# PYTEST / COVERAGE / TESTING
+# ============================================
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+
+# ============================================
+# JUPYTER / IPYTHON
+# ============================================
+.ipynb_checkpoints
+*.ipynb
+profile_default/
+ipython_config.py
+
+# ============================================
+# IDE / EDITOR
+# ============================================
+# VS Code
+.vscode/
+*.code-workspace
+
+# PyCharm / IntelliJ
+.idea/
+*.iml
+
+# Vim / Neovim
+*.swp
+*.swo
+*~
+
+# Sublime
+*.sublime-project
+*.sublime-workspace
+
+# ============================================
+# OPERATING SYSTEM
+# ============================================
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Linux
+.directory
+.Trash-*
+
+# ============================================
+# PROJECT SPECIFIC - COMPUTER VISION
+# ============================================
+# Screenshot / output gambar
+screenshots/
+output/
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.bmp
+*.tiff
+
+# Video hasil rekaman
+*.mp4
+*.avi
+*.mov
+*.mkv
+
+# Model AI yang besar (jika download manual)
+*.tflite
+*.pb
+*.onnx
+*.pt
+*.pth
+models/
+
+# Dataset (jika ada)
+dataset/
+data/
+
+# ============================================
+# ENVIRONMENT / SECRETS
+# ============================================
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+secrets.json
+config.json
+
+# ============================================
+# LOGS
+# ============================================
+*.log
+logs/
+EOF
